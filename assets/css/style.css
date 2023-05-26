@@ -1,0 +1,654 @@
+:root {
+	--maincolor:#4bb84d;
+}
+* {
+	font-family: 'Poppins', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+body {
+	background: url('../img/bg.png') no-repeat !important;
+  color: #fff;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-position: center;
+  background-position: center !important;
+  background-size: cover !important;
+}
+img {max-width: 100%;}
+.winpoint {
+  background: linear-gradient(to top, #ffcf56, #fa8e21, #ffda37 , #ffffc8, #e8cb56);
+  padding: 5px 8px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+.winpoint i {
+  background: #3c2909;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.winpoint p {
+  background: #3c2909;
+  text-transform: uppercase;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  margin-left: 8px;
+  padding: 2px 22px;
+}
+.winpoint p strong, .winpoint p span {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+.winpoint p span {
+  padding-left: 15px;
+  color: #ffde00;
+}
+.backbtn i {
+  color: #3c2909;
+  font-size: 30px;
+}
+.backbtn {
+  background: linear-gradient(to top, #ffcf56 2%, #fa8e21, #ffda37 , #ffffc8, #e8cb56);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 #3c2909;
+}
+.addcash-icon {
+  width: 80px;
+  position: absolute;
+  left: -26px;
+  top: -11px;
+}
+.addcash-text {
+  color: #3c2909;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 18px;
+  padding: 8px 20px;
+  padding-left: 60px;
+}
+.abtablegame {
+  background: url('../img/ab-poker.png') no-repeat;
+    background-size: auto;
+  background-size: cover;
+  background-position: top center;
+  height: 475px;
+}
+.ab-container {
+  max-width: 1020px;
+  position: relative;
+  z-index: 9;
+  margin-top: 50px;
+}
+.abadminimg {
+  position: absolute;
+  top: -14%;
+  left: 0;
+  right: 0;
+  width: 160px;
+  margin: 0px auto;
+  z-index: -1;
+}
+.andarbahar-icon img {
+  width: 21px;
+  margin-left: 3px;
+}
+.andarbahar-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16%;
+  margin: 0px auto;
+  width: 45%;
+  background: #084458;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px;
+}
+.timerDiv {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #250d0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 29px;
+  position: absolute;
+  top: -3%;
+  right: 11%;
+  box-shadow: 0 7px 10px #250d0b;
+}
+.timerDiv::after, .userandarbahar::after {
+  content: "";
+  display: block;
+  width: 109%;
+  height: 109%;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  background: linear-gradient(#ff9e23 -11%, #ffffc0, #ff9720);
+  z-index: 1;
+  border-radius: 50%;
+}
+.timerdes {
+  background: #250d0b;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 11;
+}
+.timerdes {
+  background: #250d0b;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 11;
+}
+.callbrak-user, .callbrak-usertb {
+  padding: 0px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #001015;
+}
+.userName {
+  text-align: center;
+  width: 100%;
+  display: block;
+  background: rgba(0,0,0, 0.9);
+  font-size: 12px;
+  padding: 4px 2px;
+  bottom: -1px !important;
+  padding-bottom: 10px;
+}
+.userName span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.userPoint {
+  width: 100%;
+  color: #3c2909;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 2px 8px;
+  text-align: center;
+  background: linear-gradient(to top, #ffcf56, #fa8e21 28%, #ffda37 , #ffffc8, #e8cb56);
+  border-radius: 25px;
+  display: block;
+  margin-top: 12px;
+  box-shadow: 0 2px 9px #000;
+}
+.userandarbahar img {
+  width: 32px;
+  position: absolute;
+  left: -5px;
+}
+.userandarbahar {
+  background: linear-gradient(#ce4541, #581c16);
+  border-radius: 25px;
+  padding: 2px 5px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 48%;
+margin-right: 11px;
+padding-left: 20px;
+}
+.andarbharuseroint {
+  width: 195px;
+  left: -30px;
+  display: ;
+  top: -19px;
+  z-index: 2;
+}
+.userandarbahar::after {
+  border-radius: 25px;
+  top: -1px;
+  height: 110%;
+  width: 105%;
+  z-index: -1;
+}
+.userbahar.userandarbahar {
+  background: linear-gradient(#255c38, #3f9760);
+}
+.callbrak-usertb, .abuserpoint4 {
+  top: 13%;
+  left: -6%;
+}
+.abuserpoint1, .abuserpoint3 {
+  top: auto;
+  left: 9%;
+  bottom: 18%;
+}
+.abuserpoint2 {
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: auto;
+  border: ;
+  bottom: 54px;
+}
+.abuserpoint3 {
+  left: auto;
+  right: 9%;
+}
+.abuserpoint4 {
+  left: auto;
+  right: -6%;
+}
+.abuser-cards {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 22%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.abuser-cards img {
+  width: 70px;
+  box-shadow: 0 0px 6px #000;
+}
+.abuser-cards img.active-usercard {
+  width: 80px;
+  margin-top: 3px;
+}
+.fixandar, .fixbahar {
+  position: absolute;
+  left: 12%;
+  top: 26%;
+  width: 30px;
+}
+.fixbahar {
+  left: auto;
+  right: 12%;
+}
+.userxpoint {
+  margin: 0;
+  position: absolute;
+  top: 28%;
+  left: 26%;
+  background:linear-gradient(to top, #ffcf56, #fa8e21, #ffda37 , #ffffc8, #e8cb56);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  font-size: 41px;
+  filter: drop-shadow(0px 1px 5px #000);
+}
+.userxpoint2 {
+  left: auto;
+  right: 26%;
+}
+.andarbharbottom-center {
+  /*background: url('../img/andarbottom.png') no-repeat;*/
+  height: 157px;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  z-index: 9;
+}
+.plushBtn {
+  background: linear-gradient(#3dc940, #9af69c, #19a41f, #007506, #12a418);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 5px solid #1b0704;
+  color: #043706;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 24px;
+  text-align: center;
+}
+.andarbharbottommainpoint {
+  font-weight: 700;
+  font-size: 22px;
+  text-shadow: 0 2px 5px #1b0704;
+}
+.andartotalpoint {
+  background: linear-gradient(#5f1e19, #872925, #aa3632, #5c1b17, #47140f);
+  padding: 10px 10px;
+  border-radius: 8px;
+  width: 160px;
+  /*position: absolute;
+  left: -25%;
+  right: 0;
+  margin: 0px auto;
+  top: 40px;*/
+  position: relative;
+}
+/*.bahartotalpoint {
+  left: 0;
+  right: -25%;
+  top: 40px;  
+}*/
+.andartotalpoint .userPoint {
+  position: relative;
+}
+.andartotalpoint .userPoint img {
+  width: 26px;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+}
+.andartotalpoint::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border: 3px solid #f83f3c;
+  top: 0;
+  border-radius: 8px;
+}
+.andartotalpoint.bahartotalpoint {
+  background: linear-gradient(#1f4325, #1b3a21, #295332, #0d2815, #183920);
+}
+.userPointBottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  width: 110px;
+  top: 53%;
+}
+.modalBg .modal-content {
+  background: linear-gradient(#005c72, #00252f);
+  border: 2px solid #dcc55b;
+  border-radius: 0;
+}
+.modalTitle {
+  font-weight: 900;
+  font-size: 30px;
+  text-shadow: 0 0 10px #000;
+}
+.modalAll .modal-header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, transparent 25%, #ffff89, transparent 72%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.modalAll .modal-header {
+  padding: 5px 15px;
+}
+.info-bet {
+  width: 100%;
+  text-align: center;
+  background: #001b21;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 25px;
+  margin-bottom: 35px;
+}
+.info-bet img {
+  width: 70px;
+  left: 0;
+  top: -4px;
+}
+.minmunbet-number {
+  position: absolute;
+  right: 0;
+  background: #3f3100;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: 80px;
+  height: 100%;
+  top: 0;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e68b22;
+}
+.modalAll .modal-footer button {
+  background: linear-gradient(to top, #ffcf56 2%, #fa8e21, #ffda37 , #ffffc8, #e8cb56);
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0 0 5px #000;
+  font-size: 22px;
+  border: 2px solid transparent;
+  min-width: 100px;
+  border-radius: 25px;
+  padding: 0px 3px;
+  position: relative;
+  z-index: 1;
+}
+.modalAll .modal-footer button::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #106a00;
+  z-index: -1;
+  border-radius: 25px;
+}
+.modalAll .modal-footer button.modalnoBtn::after {
+  background: #88000a;
+}
+.andartotalpointBg {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 526px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  padding: 0 18px;
+  top: 25px;
+  padding-top: 15px;
+  position: relative;
+}
+.andartotalpointBg::before {
+  content: "";
+  display: block;
+  width: 125%;
+  height: 134%;
+  background: url('../img/bottomandar1.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: -66px;
+  top: -22.7566666px;
+}
+.andarbharbottom-center::before {
+  content: "";
+  display: block;
+  width: 100%;
+  background: #004555;
+  position: absolute;
+  bottom: 0;
+  height: 38px;
+  left: 0;
+  border-top: 2px solid #ffe65f;
+}
+.andartotalpoint .userPoint {
+  padding-left: 25px;
+}
+
+
+@media (max-width: 1200px) {
+  .ab-container {
+  max-width: 815px;
+}
+.abtablegame {
+  height: 390px;
+}
+.callbrak-usertb {
+  width: 85px;
+  height: 85px;
+}
+.userPoint, .userandarbahar {
+  font-size: 12px;
+}
+.userandarbahar img {
+  width: 28px;
+}
+.andarbharuseroint {
+  width: 130px;
+}
+.andarbahar-icon img {
+  width: 16px;
+}
+.abuser-cards img {
+  width: 50px;
+}
+.abuser-cards img.active-usercard {
+  width: 60px;
+}
+.plushBtn {
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  line-height: 17px;
+}
+.andarbharbottommainpoint {
+  font-size: 14px;
+}
+.andartotalpoint .userPoint img {
+  width: 20px;
+}
+.andartotalpoint {
+  width: 120px;
+}
+.andartotalpointBg::before {
+  left: -51px;
+  top: -6.757px;
+}
+.andartotalpointBg {
+  width: 400px;
+  padding: 0 0;
+  top: 25px;
+  padding-top: 15px;
+}
+.andarbharbottom-center::before {
+  height: 51px;
+}
+.timerDiv {
+  font-size: 18px;
+  width: 55px;
+  height: 55px;
+}
+.timerDiv::after, .userandarbahar::after {
+  width: 107%;
+  height: 107%;
+  left: -2px;
+  top: -2px;
+}
+
+
+}
+
+@media (max-width: 991px) {
+  .addcash-text {
+  color: #3c2909;
+  font-size: 14px;
+  padding: 8px 20px;
+  padding-left: 42px;
+}
+.winpoint p strong, .winpoint p span {
+  font-size: 12px;
+}
+.winpoint p {
+  height: 30px;
+  padding: 2px 12px;
+  margin-left: 5px;
+}
+.winpoint p span {
+  padding-left: 8px;
+}
+.winpoint i {
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+}
+.addcash-icon {
+  width: 69px;
+}
+.backbtn {
+  width: 45px;
+  height: 45px;
+}
+.backbtn i {
+  font-size: 22px;
+}
+
+}
+
+@media (max-width: 766px) {
+  .ab-container {
+  max-width: 640px;
+}
+.abtablegame {
+  height: 300px;
+}
+.andarbahar-icon {
+  top: 15%;
+  width: 50%;
+}
+.andarbahar-icon img {
+  width: 13px;
+}
+.userandarbahar img {
+  width: 20px;
+}
+.userPoint, .userandarbahar {
+  font-size: 10px;
+  padding-left: 8px;
+}
+.andarbharuseroint {
+  width: 110px;
+  left: -29px;
+}
+.callbrak-usertb {
+  width: 60px;
+  height: 60px;
+}
+.userName span {
+  font-size: 10px;
+}
+.fixandar, .fixbahar {
+  top: 25%;
+  width: 20px;
+}
+
+}
+
+
+
+
